@@ -1,0 +1,120 @@
+body{
+	font-family: 'Oxygen', sans-serif;
+	overflow-x: hidden;
+}
+
+.container-fluid .tagline{
+	/*margin-top: 80px;*/
+	align-self: center;
+}
+
+/*about*/
+.about{
+	font-family:'Ibarra Real Nova', serif;
+	font-size: 16px;
+	min-height: 900px;
+}
+
+
+/*gallery*/
+
+.gallery{
+	margin-top: 150px;
+	min-height: 500px;
+}
+
+footer{
+	min-height: 400px;
+}
+
+
+/*Responsive breakpoint*/
+
+/*tablet*/
+@media (max-width: 767.98px) {
+	.tagline-order{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.tagline-order .tagline h2{
+		order: 2;
+	}
+
+	.tagline-order .tagline button{
+		order: 0;
+	}
+
+	.tagline-order .pict1{
+		order: 1;
+	}
+
+}
+
+/*Phone*/
+@media (max-width: 575.98px) {
+
+	.header{
+		margin: 2px;
+	}
+
+
+	.tagline-order{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.tagline-order .tagline h2{
+		display: none;
+		order: 2;
+	}
+
+	.tagline-order .tagline button{
+		order: 0;
+	}
+
+	.tagline-order .pict1{
+		order: 3;
+	}
+
+	.tagline-order .pict2{
+		order: 1;
+	}
+	
+
+	.harga{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.harga h2{
+		order: 2;
+	}
+
+	.harga .apart1 img{
+		order: 0;
+
+	}
+
+	.harga .apart1 .harga1{
+		order: 3;
+
+	}
+
+	.harga .apart2 img{
+		order: 1;
+
+	}
+
+	.harga .apart2 .harga2{
+		order: 4;
+
+	}
+
+}
+
+
+
+
+
